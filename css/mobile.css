@@ -4,6 +4,26 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .navigation-list, 
+    .header-contacts {
+        display: none;
+    }
+
+    .burger-menu {
+        width: 32px;
+        height: 22px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    .burger-icon {
+        stroke: var(--navy-blue-color);
+    }
+   
+}
+
 @media screen and (max-width: 1199px) {
     .work-section {
         display: none;
