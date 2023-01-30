@@ -1,0 +1,132 @@
+@media screen and (min-width: 1200px) {
+        
+    .container {
+        width: 1160px;
+    }
+    
+    .features {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    } 
+
+    .features-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .features-item::before {
+       display: block;
+       content: "";
+       height: 112px;
+       border-radius: 4px;
+       background-color: var(--cloud-color);
+       background-repeat: no-repeat;
+       background-position: center;
+}
+
+.features-item:nth-child(1)::before {
+background-image: url("../images/antenna.svg");
+}
+
+.features-item:nth-child(2)::before {
+background-image: url("../images/clock.svg");
+}
+
+.features-item:nth-child(3)::before {
+background-image: url("../images/diagram.svg");
+}
+
+.features-item:nth-child(4)::before {
+background-image: url("../images/astronaut.svg");
+}
+
+.features-wrap {
+display: flex;
+gap: 24px;
+flex-wrap: nowrap;
+}
+
+.features-title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+text-align: left;
+margin-top: 8px;
+}
+
+.features-text {
+font-weight: 400;
+}
+
+.work-section {
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.second-title {
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--navy-blue-color);
+}
+
+.work-title {
+    margin-bottom: 72px;
+}
+
+.work-list {
+    display: flex;
+    gap: 24px;
+}
+
+.work-item {
+border: 1px solid var(--corni-flower-color);
+}
+
+    .team-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .section-customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .customers-list {
+        width: 100%;
+        display: flex;
+        gap: 24px;
+        flex-wrap: nowrap;
+      }
+
+      .footer-container {
+        flex-wrap: nowrap;
+    }
+
+      .footer-content {
+       display: block;
+       margin-left: 0;
+       margin-right: 120px;
+    }
+
+    .footer-social {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .footer-form-wrap {
+        margin-left: 80px;
+    }
+}
+

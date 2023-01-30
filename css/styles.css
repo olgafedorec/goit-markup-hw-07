@@ -163,8 +163,8 @@ padding-bottom: 28px;
 .section-hero {
     margin: 0 auto;
     text-align: center;
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 112px;
+    padding-bottom: 112px;
 }
 
 .bg-overlay{
@@ -182,14 +182,14 @@ padding-bottom: 28px;
 }
 
 .title-hero {
-    font-weight: 500;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: left;
     letter-spacing: 0.02em;
     color: var(--white-color);
-    max-width: 492px;
-    margin-top: 192px;
+    text-align: center;
+    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -206,7 +206,7 @@ Width: 170px;
 height: 56px;
 border: 1px solid var(--iris-color);
 border-radius: 4px;
-margin-top: 48px;
+margin-top: 72px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 transition: background-color 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function); 
@@ -309,33 +309,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 /* ------------WORK------------- */
 
-.work-section {
-    margin: 0 auto;
-    padding-bottom: 120px;
-}
-
 .second-title {
-font-style: normal;
-font-weight: 500;
+font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: var(--navy-blue-color);
-}
-
-.work-title {
-    margin-bottom: 72px;
-}
-
-.work-list {
-    display: flex;
-    gap: 24px;
-}
-
-.work-item {
-border: 1px solid var(--corni-flower-color);
 }
 
 /* ------------TEAM------------- */
@@ -717,10 +697,11 @@ margin-bottom: 16px;
     color: var(--white-color);
     text-align: left;
     transition: background-color 250ms var(--timing-function),
-box-shadow 250ms var(--timing-function);
-margin-top: 16px;
-margin-left: auto;
-margin-right: auto;
+    box-shadow 250ms var(--timing-function);
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .footer-button:hover,
@@ -966,125 +947,3 @@ background-color: var(--ocean);
 border: 1px solid var(--ocean);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-/* ------------MEDIA --------------*/
-
-@media screen and (min-width: 480px) {
-    .container {
-        width: 428px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-
-    .team-section {
-        padding-bottom: 104px;
-    }
-    
-    .team-list {
-        width: 552px;
-        column-gap: 24px;
-        row-gap: 64px;
-        margin-left: auto; 
-        margin-right: auto;
-    }
-   
-    .features-wrap {
-        display: flex;
-        column-gap: 24px;
-        row-gap: 72px;
-        flex-wrap: wrap;
-    }
-
-    .features-item {
-        width: calc((100% - 24px) / 2);
-     }
-
-     .customers-list {
-        width: 552px;
-        margin-left: auto; 
-        margin-right: auto;
-      }
-      
-      .customers-item {
-          width: calc((100% - 48px) / 3);
-          height: 88px;
-      }
-
-      .footer-content {
-        width: 264px;
-        align-items: flex-start;
-        margin-left: 108px;
-    } 
-    
-    .footer-social {
-        width: 208px;
-        align-items: flex-start;
-        margin-left: 24px;
-    }
-
-    .footer-form-wrap {
-        width: 453px;
-        height: 80px;
-        align-items: flex-start;
-        margin-left: 108px;
-    }
-
-    .footer-form {
-       display: flex;
-    }
-  }
-    .footer-button {
-        margin-left: 24px;
-        margin-top: 0;
-    }
-
-    @media screen and (min-width: 1200px) {
-        .features {
-            padding-top: 120px;
-            padding-bottom: 120px;
-        } 
-
-        .features-item::before {
-    display: block;
-    content: "";
-    height: 112px;
-    border-radius: 4px;
-    background-color: var(--cloud-color);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.features-item:nth-child(1)::before {
-    background-image: url("../images/antenna.svg");
-}
-
-.features-item:nth-child(2)::before {
-    background-image: url("../images/clock.svg");
-}
-
-.features-item:nth-child(3)::before {
-    background-image: url("../images/diagram.svg");
-}
-
-.features-item:nth-child(4)::before {
-    background-image: url("../images/astronaut.svg");
-}
-
-.features-wrap {
-    flex-wrap: nowrap;
-}
-
-        .team-section {
-            padding-top: 120px;
-            padding-bottom: 120px;
-        }
-
-        .section-customers {
-            padding-top: 120px;
-            padding-bottom: 120px;
-        }
-    }

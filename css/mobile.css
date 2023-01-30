@@ -1,0 +1,11 @@
+@media screen and (min-width: 480px) {
+    .container {
+        width: 428px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .work-section {
+        display: none;
+    }
+}
