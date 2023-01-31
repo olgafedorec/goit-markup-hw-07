@@ -20,6 +20,9 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header">
@@ -31,12 +34,10 @@
 
           <ul class="navigation-list list">
             <li class="navigation-item">
-              <a href="./index.html" class="navigation-link">Studio</a>
+              <a href="./index.html" class="navigation-link current">Studio</a>
             </li>
             <li class="navigation-item">
-              <a href="./portfolio.html" class="navigation-link current"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="navigation-link">Portfolio</a>
             </li>
             <li class="navigation-item">
               <a href="" class="navigation-link">Contacts</a>
@@ -45,17 +46,97 @@
         </nav>
 
         <ul class="list header-contacts">
-          <li>
+          <li class="contacts-item">
             <a href="mailto:info@devstudio.com" class="header-link"
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
+          <li class="contacts-item">
             <a href="tel:+110001111111" class="header-link"
               >+11 (000) 111-11-11</a
             >
           </li>
         </ul>
+        <button type="button" data-menu-open class="burger-menu">
+          <svg class="burger-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu-container">
+          <div class="mob-menu-nav">
+            <button type="button" class="modal-close" data-menu-close>
+              <svg class="modal-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mob-navigation-list list">
+                <li class="mob-navigation-item">
+                  <a href="./index.html" class="mob-navigation-link link"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mob-navigation-item">
+                  <a href="./portfolio.html" class="mob-navigation-link link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-navigation-item">
+                  <a href="" class="mob-navigation-link link current"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="mob-menu-contacts">
+            <ul class="list mob-contacts">
+              <li class="mob-contacts-item">
+                <a href="tel:+110001111111" class="mob-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-contacts-item">
+                <a href="mailto:info@devstudio.com" class="mob-mail-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list mob-soc-list">
+              <li class="mob-soc-item">
+                <a href="" class="link mob-soc-link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="link mob-soc-link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="link mob-soc-link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="link mob-soc-link">
+                  <svg class="mob-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -349,5 +430,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
