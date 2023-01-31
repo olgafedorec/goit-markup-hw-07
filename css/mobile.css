@@ -16,12 +16,12 @@
         padding: 0;
         background-color: transparent;
         border: none;
+        margin-top: 24px;
     }
-
+    
     .burger-icon {
         stroke: var(--navy-blue-color);
     }
-   
 }
 
 @media screen and (max-width: 1199px) {
