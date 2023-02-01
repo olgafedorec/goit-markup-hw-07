@@ -168,8 +168,26 @@ border: 1px solid var(--corni-flower-color);
         gap: 24px;
         flex-wrap: nowrap;
       }
+
+      /*-----------PROJECTS----------- */
+
+      .projects-section {
+        margin: 0 auto;
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
+
+    .projects-item {
+        width: calc((100% - 48px) / 3);
+    }
 /* -----------FOOTER------------- */
-      .footer-container {
+
+.footer-background {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+      
+.footer-container {
         flex-wrap: nowrap;
     }
 
@@ -177,6 +195,7 @@ border: 1px solid var(--corni-flower-color);
        display: block;
        margin-left: 0;
        margin-right: 120px;
+       margin-bottom: 0;
     }
 
     .footer-social {
@@ -187,5 +206,6 @@ border: 1px solid var(--corni-flower-color);
     .footer-form-wrap {
         margin-left: 80px;
     }
+}
 }
 

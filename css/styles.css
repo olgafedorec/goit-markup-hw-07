@@ -33,6 +33,9 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 body {
@@ -598,13 +601,12 @@ border-color: var(--ocean);
     .projects-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
     row-gap: 48px;
     margin-top: 72px;
 }
 
 .projects-item {
-    width: calc((100% - 48px) / 3);
+    width: 100%;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     transition: transform 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
@@ -673,8 +675,8 @@ margin-top: 8px;
 
 .footer-background {
     background-color: var(--navy-blue-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .footer-container {

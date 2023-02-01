@@ -82,8 +82,47 @@
           width: calc((100% - 48px) / 3);
           height: 88px;
       }
+
+/*-----------PROJECTS----------- */
+
+.projects-section {
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.projects-buttons {
+    width: 100%;
+    gap: 24px;
+    flex-wrap: nowrap;
+    justify-content: center
+}
+
+.filter-button {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+    margin-top: 64px;
+}
+
+.projects-item {
+    width: calc((100% - 24px) / 2);
+}
+
 /* ---------FOOTER----------- */
-      .footer-content {
+
+.footer-background {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+     
+.footer-content {
         width: 264px;
         align-items: flex-start;
     } 
