@@ -34,14 +34,15 @@
           rgba(46, 47, 66, 0.7)
       ), url(../images/hero-bg-2x.jpg);
     }
+}
     
     .title-hero {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
         color: var(--white-color);
-        max-width: 492px;
+        /* max-width: 494px; */
     }
     
     .hero-button {
@@ -72,32 +73,6 @@
         width: calc((100% - 72px) / 4);
     }
 
-    .features-item::before {
-       display: block;
-       content: "";
-       height: 112px;
-       border-radius: 4px;
-       background-color: var(--cloud-color);
-       background-repeat: no-repeat;
-       background-position: center;
-}
-
-.features-item:nth-child(1)::before {
-background-image: url("../images/antenna.svg");
-}
-
-.features-item:nth-child(2)::before {
-background-image: url("../images/clock.svg");
-}
-
-.features-item:nth-child(3)::before {
-background-image: url("../images/diagram.svg");
-}
-
-.features-item:nth-child(4)::before {
-background-image: url("../images/astronaut.svg");
-}
-
 .features-wrap {
 display: flex;
 gap: 24px;
@@ -115,21 +90,12 @@ margin-top: 8px;
 .features-text {
 font-weight: 400;
 }
+
 /* -----------WORK------------- */
+
 .work-section {
     margin: 0 auto;
     padding-bottom: 120px;
-}
-
-.second-title {
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color: var(--navy-blue-color);
 }
 
 .work-title {
@@ -151,8 +117,6 @@ border: 1px solid var(--corni-flower-color);
     }
 
     .team-list {
-        width: 100%;
-        display: flex;
         flex-wrap: nowrap;
         gap: 24px;
     }
@@ -192,20 +156,37 @@ border: 1px solid var(--corni-flower-color);
     }
 
       .footer-content {
-       display: block;
-       margin-left: 0;
-       margin-right: 120px;
+      align-items: flex-start;
        margin-bottom: 0;
+       width: 264px;
     }
 
     .footer-social {
-        margin-left: 0;
+       align-items: flex-start;
         margin-bottom: 0;
+        margin-left: 120px;
+
+        width: 208px;
     }
 
     .footer-form-wrap {
-        margin-left: 80px;
+    align-items: flex-start;
+    margin-left: 80px;
+
+    }
+
+    .footer-form {
+        display: flex;
+     
+    }
+
+    .footer-button {
+        margin-left: 24px;
+        margin-right: 0;
+        margin-top: 0;
     }
 }
-}
+
+
+
 
