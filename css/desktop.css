@@ -122,6 +122,7 @@ border: 1px solid var(--corni-flower-color);
     .team-section {
         padding-top: 120px;
         padding-bottom: 120px;
+        max-width: 1440px;
     }
 
     .team-list {
@@ -157,6 +158,8 @@ border: 1px solid var(--corni-flower-color);
 .footer-background {
     padding-top: 100px;
     padding-bottom: 100px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
       
 .footer-container {
