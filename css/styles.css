@@ -48,6 +48,7 @@ body {
 }
 
 .header {
+    max-width: 1440px;
     border-bottom: 1px solid var(--corni-flower-color);
     margin: 0 auto;
 }
@@ -67,14 +68,14 @@ font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 18px;
-line-height: 1.33;
+line-height: 1.25;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--iris-color);
 text-decoration: none;
 margin-right: 77px;
 padding-top: 24px;
-padding-bottom: 28px;
+padding-bottom: 24px;
 }
 
 .studio {
@@ -147,10 +148,6 @@ padding-bottom: 28px;
 .header-link:focus {
     color: var(--iris-color);
 }
- 
-.mob-menu-container {
-    width: 369px;
- }
 
  .mob-menu {
     position: fixed;
@@ -174,8 +171,8 @@ padding-bottom: 28px;
     color: var(--ocean);
 }
 
-.mob-navigation-list {
-    margin-bottom: 284px;
+.mob-menu-contacts {
+margin-bottom: 20px;
 }
 
 .mob-menu-nav {
@@ -197,7 +194,7 @@ color: var(--navy-blue-color);
 
 .mob-link {
 font-weight: 600;
-font-size: 36px;
+font-size: 35px;
 line-height: 1.11;
 color: var(--iris-color);
 display: inline-block;
@@ -215,8 +212,7 @@ margin-bottom: 40px;
 
 .mob-soc-list {
     display: flex;
-    justify-content: left;
-    gap: 56px;
+    justify-content: space-between;
     margin-top: 48px;
 }
 

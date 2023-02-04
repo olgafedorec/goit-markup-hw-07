@@ -80,12 +80,8 @@
     /* -----------HEADER------------- */
     
     .header-contacts {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: end;
-        height: 36px;
-        padding-top: 24px;
-        padding-bottom: 9px;
+        margin-top: 24px;
+        margin-bottom: 10px;
     } 
 
     /*----------FEATURES----------*/
@@ -100,6 +96,10 @@
 .features-item {
     width: calc((100% - 24px) / 2);
  }
+
+ .features-title {
+    text-align: left;
+}
     
     /* -----------TEAM------------- */
     
